@@ -117,7 +117,7 @@ class Locomotion:
         Parameters
         ----------
         factor : float
-            Positive values move forward, negative values move back. Should be in the range 0.0-1.0.
+            Positive values move forward, negative values move back. Should be in the range -1.0 - 1.0.
         """
         self._forward_factor = factor*2
 
@@ -127,7 +127,7 @@ class Locomotion:
         Parameters
         ----------
         factor : float
-            Positive values rotate right, negative values rotate left. Should be in the range 0.0-1.0.
+            Positive values rotate right, negative values rotate left. Should be in the range -1.0 - 1.0.
         """
         self._rotation_factor = factor*100
 
@@ -137,7 +137,7 @@ class Locomotion:
         Parameters
         ----------
         lean : float
-            Positive values lean right, negative values lean left. Should be in the range 0.0-1.0.
+            Positive values lean right, negative values lean left. Should be in the range -1.0 - 1.0.
         """
         self._lean_factor = lean*20
 
